@@ -23,13 +23,6 @@ class Student:
         self.problems_solved = problems_solved
         self.performance = performance
 
-    def create_copy(self, other_student):
-        self.name = other_student.name
-        self.age = other_student.age
-        self.problems_solved = other_student.problems_solved
-
-        return Student(other_student.name, other_student.age, other_student.problems_solved, Performance(other_student.performance))
-
 
 if __name__ == "__main__":
     p1 = Performance(100, 67.1)
